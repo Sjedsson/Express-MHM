@@ -29,6 +29,8 @@ const Contact = ({ title, content, id, t }: ContactProps) => {
         <Col lg={12} md={12} sm={24} xs={24}>
           <Slide direction="right" triggerOnce>
             <FormGroup autoComplete="off" onSubmit={handleSubmit}>
+              <input type="hidden" name="access_key" value="4d2508ac-91a8-4aa1-8419-b622addad733" />
+
               <Col span={24}>
                 <Input
                   type="text"
@@ -36,28 +38,34 @@ const Contact = ({ title, content, id, t }: ContactProps) => {
                   placeholder="Your Name"
                   value={values.name || ""}
                   onChange={handleChange}
+
                 />
                 <ValidationType type="name" />
               </Col>
+
               <Col span={24}>
                 <Input
-                  type="text"
+                  type="email"
                   name="email"
                   placeholder="Your Email"
                   value={values.email || ""}
                   onChange={handleChange}
+
                 />
                 <ValidationType type="email" />
               </Col>
+
               <Col span={24}>
                 <TextArea
                   placeholder="Your Message"
                   value={values.message || ""}
                   name="message"
                   onChange={handleChange}
+
                 />
                 <ValidationType type="message" />
               </Col>
+
               <ButtonContainer>
                 <Button name="submit">{t("Submit")}</Button>
               </ButtonContainer>

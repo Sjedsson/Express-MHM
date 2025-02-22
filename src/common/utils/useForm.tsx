@@ -5,6 +5,7 @@ interface IValues {
   name: string;
   email: string;
   message: string;
+  access_key?: string;
 }
 
 const initialValues: IValues = {
@@ -22,13 +23,13 @@ export const useForm = (validate: { (values: IValues): IValues }) => {
     errors: { ...initialValues },
   });
 
-  const handleSubmit = async (event: React.ChangeEvent<HTMLFormElement>) => {
+  const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-    const values = formState.values;
+    const values = { ...formState.values, access_key: "4d2508ac-91a8-4aa1-8419-b622addad733" };
     const errors = validate(values);
     setFormState((prevState) => ({ ...prevState, errors }));
 
-    const url = ""; // Fill in your API URL here
+    const url = "https://api.web3forms.com/submit"; // Web3Forms API URL
 
     try {
       if (Object.values(errors).every((error) => error === "")) {
@@ -47,7 +48,6 @@ export const useForm = (validate: { (values: IValues): IValues }) => {
               "There was an error sending your message, please try again later.",
           });
         } else {
-          event.target.reset();
           setFormState(() => ({
             values: { ...initialValues },
             errors: { ...initialValues },
@@ -55,7 +55,7 @@ export const useForm = (validate: { (values: IValues): IValues }) => {
 
           notification["success"]({
             message: "Success",
-            description: "Your message has been sent!",
+            description: "Your message has been sent successfully!",
           });
         }
       }
