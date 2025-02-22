@@ -1,15 +1,15 @@
 {
-  "title": "Light, fast & responsive",
-  "text": "This template is ready to use, so you don't need to change anything at a component level, unless you want to customize the default styling.",
+  "title": "Fast, Precise & Safe Hydro Excavation",
+  "text": "Express MHM ensures efficient and damage-free excavation using advanced hydro vacuum technology. Our cutting-edge equipment delivers precision, safety, and speed, making it the ideal solution for urban, industrial, and construction projects.",
   "section": [
     {
-      "title": "Why Antd?",
-      "content": "Ant Design is a React UI library that has a lot of easy-to-use components for building elegant UI.",
+      "title": "Why Choose Express MHM?",
+      "content": "Express MHM delivers safe, precise, and non-destructive hydro excavation using high-pressure water. Our advanced method protects underground utilities and ensures fast, efficient, and damage-free digging for any project.",
       "icon": "notes.svg"
     },
     {
-      "title": "Why styled-components?",
-      "content": "Styled Components gives you total control over your components.",
+      "title": "Why Hydro Excavation?",
+      "content": "Hydro excavation uses high-pressure water for safe, precise, and damage-free digging. It protects underground utilities, reduces surface disruption, and ensures faster, more efficient excavation for any project.",
       "icon": "notes.svg"
     }
   ]
