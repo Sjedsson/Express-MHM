@@ -21,7 +21,7 @@ const Home = () => {
         title={IntroContent.title}
         content={IntroContent.text}
         button={IntroContent.button}
-        icon="developer.jpg"
+        icon={`${process.env.PUBLIC_URL}/svg/developer.jpg`}  // Corrected path
         id="intro"
       />
       <MiddleBlock
@@ -34,21 +34,21 @@ const Home = () => {
         title={AboutContent.title}
         content={AboutContent.text}
         section={AboutContent.section}
-        icon="graphs.svg"
+        icon={`${process.env.PUBLIC_URL}/svg/graphs.svg`}  // Corrected path
         id="about"
       />
       <ContentBlock
         direction="right"
         title={MissionContent.title}
         content={MissionContent.text}
-        icon="product-launch.svg"
+        icon={`${process.env.PUBLIC_URL}/svg/product-launch.svg`}  // Corrected path
         id="mission"
       />
       <ContentBlock
         direction="left"
         title={ProductContent.title}
         content={ProductContent.text}
-        icon="waving.svg"
+        icon={`${process.env.PUBLIC_URL}/svg/waving.svg`}  // Corrected path
         id="product"
       />
       <Contact
@@ -61,3 +61,4 @@ const Home = () => {
 };
 
 export default Home;
+
