@@ -21,7 +21,7 @@ const Home = () => {
         title={IntroContent.title}
         content={IntroContent.text}
         button={IntroContent.button}
-        icon={`${process.env.PUBLIC_URL}/svg/developer.jpg`}  // Corrected path
+        icon={`${process.env.PUBLIC_URL}/svg/developer.jpg`}  // Fixed Path
         id="intro"
       />
       <MiddleBlock
@@ -34,21 +34,21 @@ const Home = () => {
         title={AboutContent.title}
         content={AboutContent.text}
         section={AboutContent.section}
-        icon={`${process.env.PUBLIC_URL}/svg/graphs.svg`}  // Corrected path
+        icon={`${process.env.PUBLIC_URL}/svg/graphs.svg`}  // Fixed Path
         id="about"
       />
       <ContentBlock
         direction="right"
         title={MissionContent.title}
         content={MissionContent.text}
-        icon={`${process.env.PUBLIC_URL}/svg/product-launch.svg`}  // Corrected path
+        icon={`${process.env.PUBLIC_URL}/svg/product-launch.svg`}  // Fixed Path
         id="mission"
       />
       <ContentBlock
         direction="left"
         title={ProductContent.title}
         content={ProductContent.text}
-        icon={`${process.env.PUBLIC_URL}/svg/waving.svg`}  // Corrected path
+        icon={`${process.env.PUBLIC_URL}/svg/waving.svg`}  // Fixed Path
         id="product"
       />
       <Contact
